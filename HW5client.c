@@ -51,8 +51,10 @@ int main(int argc, char *argv[]) {
                 if(outputLine[i] == '\0') break;
             }
         }
+
         if(i == MAX_LINE_SIZE) outputLine[i-1] = '\0';
         printf("%s", outputLine);
+        printf("%% ");
     }
     Socket_close(connect_socket);
     exit(0);
